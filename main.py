@@ -12,7 +12,8 @@ import os
 print("Initialing...")
 
 # Load Flask variables
-flask_port = os.getenv('MONGO_CONNECTION')
+flask_port = os.getenv('FLASK_PORT')
+flask_host = os.getenv('FLASK_HOST')
 
 # Connection to MongoDB
 connection_url = os.getenv('MONGO_CONNECTION')
@@ -29,7 +30,7 @@ class User(Resource):
 api.add_resource(User, '/user/<nick>')
 
 if __name__ == '__main__':
-    app.run(debug=True, port='3000', host='0.0.0.0')
+    app.run(debug=True, port=flask_port, host=flask_host)
 
 
 
