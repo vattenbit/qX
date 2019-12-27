@@ -4,3 +4,4 @@ flask-restful
 pymongo
 bson
 dnspython==1.16.0
+python-dotenv
