@@ -3,3 +3,4 @@ flask-jwt-extended
 flask-restful
 pymongo
 bson
+dnspython==1.16.0
