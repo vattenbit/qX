@@ -1,5 +1,6 @@
 echo "Executing Api...";
+pip3 install virtualenv
 virtualenv vqx;
 source vqx/bin/activate;
-pip install -r requirements.txt;
+pip3 install -r requirements.txt;
 ./api/run.py;
