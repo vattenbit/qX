@@ -1,2 +1,2 @@
 echo "Executing Api..."
-./api/main.py
+./api/run.py
